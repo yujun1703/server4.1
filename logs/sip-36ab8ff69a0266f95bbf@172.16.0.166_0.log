@@ -1,0 +1,17 @@
+2018-10-16 19:29:31.972  - INFO: ErizoJS - pid: 9334
+2018-10-16 19:29:31.974  - INFO: ErizoJS - Connecting to rabbitMQ server...
+2018-10-16 19:29:31.985  - INFO: AmqpClient - Connecting to rabbitMQ server OK, hostPort: { host: 'localhost', port: 5672 }
+Local network address:  IPv4=eth0:172.16.0.166 
+aucodec: PCMU/8000/1
+aucodec: PCMA/8000/1
+aucodec: opus/48000/2
+vidcodec: H265
+vidcodec: H264
+vidcodec: H264
+vidcodec: H264
+vidcodec: H264
+vidcodec: VP8
+sipua is ready.
+2018-10-16 19:29:32.005  - INFO: ErizoJS - sip-36ab8ff69a0266f95bbf@172.16.0.166_0 as rpc server ready
+2018-10-16 19:29:32.008  - INFO: ErizoJS - sip-36ab8ff69a0266f95bbf@172.16.0.166_0 as monitor ready
+2018-10-16 19:31:07.444  - WARN: ErizoJS - Exiting on SIGTERM

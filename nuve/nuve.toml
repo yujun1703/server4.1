@@ -1,0 +1,16 @@
+[nuve]
+keystorePath = "./cert/certificate.pfx"
+superserviceID = "5ba33a4b3b39d43b303e5970"
+ssl = false #default: false
+port = 8300 #default: 3000, port of nuve server
+numberOfProcess = 4 #default: 1
+
+[cluster]
+name = "woogeen-cluster"
+
+[rabbit]
+host = "localhost" #default: "localhost"
+port = 5672 #default: 5672
+
+[mongo]
+dataBaseURL = "localhost/nuvedb"

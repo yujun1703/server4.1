@@ -1,0 +1,3 @@
+2018-10-16 19:45:41.918  - INFO: AmqpClient - Connecting to rabbitMQ server OK, hostPort: { host: 'localhost', port: 5672 }
+2018-10-16 19:45:41.939  - INFO: SipPortal - sip-portal up!
+2018-10-16 19:45:41.946  - INFO: SipPortal - initSipRooms ok

@@ -1,0 +1,6 @@
+libAACenc/src/aacenc_hcr.lo: libAACenc/src/aacenc_hcr.cpp \
+ /usr/include/stdc-predef.h libAACenc/src/aacenc_hcr.h
+
+/usr/include/stdc-predef.h:
+
+libAACenc/src/aacenc_hcr.h:

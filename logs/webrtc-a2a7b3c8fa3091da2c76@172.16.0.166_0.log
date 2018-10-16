@@ -1,0 +1,7 @@
+2018-10-16 19:31:21.722  - INFO: ErizoJS - pid: 11087
+2018-10-16 19:31:21.724  - INFO: ErizoJS - Connecting to rabbitMQ server...
+2018-10-16 19:31:21.735  - INFO: AmqpClient - Connecting to rabbitMQ server OK, hostPort: { host: 'localhost', port: 5672 }
+2018-10-16 19:31:21.781  - INFO: ErizoJS - webrtc-a2a7b3c8fa3091da2c76@172.16.0.166_0 as rpc server ready
+2018-10-16 19:31:21.783  - INFO: ErizoJS - webrtc-a2a7b3c8fa3091da2c76@172.16.0.166_0 as monitor ready
+2018-10-16 19:31:41,213  - WARN: LibNiceConnection - id: 602494799641411800,  message: failed and not received all candidates, newComponentState:4
+2018-10-16 19:33:33.089  - WARN: ErizoJS - Exiting on SIGTERM

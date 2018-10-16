@@ -1,0 +1,14 @@
+prefix=/home/devin/IntelWebrtc4.1/Release-v4.1/audio_agent/ffmpeg_libfdkaac_src
+exec_prefix=${prefix}
+libdir=/home/devin/IntelWebrtc4.1/Release-v4.1/audio_agent/ffmpeg_libfdkaac_src/lib
+includedir=/home/devin/IntelWebrtc4.1/Release-v4.1/audio_agent/ffmpeg_libfdkaac_src/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 7.16.100
+Requires: 
+Requires.private: libswscale >= 5.1.100, libavformat >= 58.12.100, libavcodec >= 58.18.100, libswresample >= 3.1.100, libavutil >= 56.14.100
+Conflicts:
+Libs: -L${libdir}  -lavfilter 
+Libs.private: -pthread -lm
+Cflags: -I${includedir}

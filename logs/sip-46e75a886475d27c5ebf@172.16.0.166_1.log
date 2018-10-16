@@ -1,0 +1,16 @@
+2018-10-16 19:45:35.431  - INFO: ErizoJS - pid: 17752
+2018-10-16 19:45:35.433  - INFO: ErizoJS - Connecting to rabbitMQ server...
+2018-10-16 19:45:35.444  - INFO: AmqpClient - Connecting to rabbitMQ server OK, hostPort: { host: 'localhost', port: 5672 }
+Local network address:  IPv4=eth0:172.16.0.166 
+aucodec: PCMU/8000/1
+aucodec: PCMA/8000/1
+aucodec: opus/48000/2
+vidcodec: H265
+vidcodec: H264
+vidcodec: H264
+vidcodec: H264
+vidcodec: H264
+vidcodec: VP8
+sipua is ready.
+2018-10-16 19:45:35.463  - INFO: ErizoJS - sip-46e75a886475d27c5ebf@172.16.0.166_1 as rpc server ready
+2018-10-16 19:45:35.465  - INFO: ErizoJS - sip-46e75a886475d27c5ebf@172.16.0.166_1 as monitor ready

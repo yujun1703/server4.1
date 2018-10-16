@@ -1,0 +1,7 @@
+2018-10-16 19:31:20.634  - INFO: ErizoJS - pid: 11028
+2018-10-16 19:31:20.636  - INFO: ErizoJS - Connecting to rabbitMQ server...
+2018-10-16 19:31:20.648  - INFO: AmqpClient - Connecting to rabbitMQ server OK, hostPort: { host: 'localhost', port: 5672 }
+2018-10-16 19:31:20.666  - INFO: ErizoJS - video-dfc0e9f2fd3dd7abfee8@172.16.0.166_0 as rpc server ready
+2018-10-16 19:31:20.668  - INFO: ErizoJS - video-dfc0e9f2fd3dd7abfee8@172.16.0.166_0 as monitor ready
+2018-10-16 19:31:31,948  - INFO: mcu.media.VideoMixer - Init maxInput(16), rootSize(640, 480), bgColor(16, 128, 128)
+2018-10-16 19:34:09.291  - WARN: ErizoJS - Exiting on SIGTERM

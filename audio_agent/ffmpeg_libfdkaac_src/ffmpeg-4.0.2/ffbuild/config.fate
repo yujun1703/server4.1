@@ -1,0 +1,1 @@
+config:x86:x86_64:generic:linux:gcc 4.8.5 (GCC) 20150623 (Red Hat 4.8.5-28):--prefix=/home/devin/IntelWebrtc4.1/Release-v4.1/audio_agent/ffmpeg_libfdkaac_src --enable-shared --disable-static --disable-libvpx --disable-vaapi --enable-libfdk-aac --enable-nonfree

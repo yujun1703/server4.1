@@ -1,0 +1,1 @@
+"use strict";var mongoose=require("mongoose"),Schema=mongoose.Schema,KeySchema=new Schema({_id:Number,key:String});module.exports=mongoose.model("Key",KeySchema);

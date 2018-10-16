@@ -1,0 +1,6 @@
+2018-10-16 19:31:16.347  - INFO: ErizoJS - pid: 10733
+2018-10-16 19:31:16.350  - INFO: ErizoJS - Connecting to rabbitMQ server...
+2018-10-16 19:31:16.365  - INFO: AmqpClient - Connecting to rabbitMQ server OK, hostPort: { host: 'localhost', port: 5672 }
+2018-10-16 19:31:16.632  - INFO: ErizoJS - conference-60857e1b30764e6e0c36@172.16.0.166_0 as rpc server ready
+2018-10-16 19:31:16.637  - INFO: ErizoJS - conference-60857e1b30764e6e0c36@172.16.0.166_0 as monitor ready
+2018-10-16 19:34:09.286  - INFO: Conference - Empty room  5bb9b0fb78e6eb109f764005 . Deleting it
