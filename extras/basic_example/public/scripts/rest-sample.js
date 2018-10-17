@@ -18,11 +18,11 @@ var send = function (method, path, body, onRes, host) {
     }
 };
 
-var generateUrl = function(host, path) {
+var generateUrl = function (host, path) {
     let url;
     if (host !== undefined) {
         url = host + path;  // Use the host user set.
-    }else {
+    } else {
         let index = document.URL.lastIndexOf('\/');
         url = document.URL.substring(0, index) + path;  // Get the string before last '/'.
     }
@@ -51,9 +51,9 @@ var getRoom = function (room, host) {
 
 var createRoom = function (host) {
     send('POST', '/rooms/', {
-        name: 'testNewRoom',
-        options: undefined
-    },
+            name: 'testNewRoom',
+            options: undefined
+        },
         onResponse, host);
 };
 
