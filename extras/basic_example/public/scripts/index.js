@@ -20,7 +20,17 @@ const runSocketIOSample = function() {
 
     var subscribeForward = getParameterByName('forward') === 'true'?true:false;
 
-    conference = new Ics.Conference.ConferenceClient();
+    //conference = new Ics.Conference.ConferenceClient();
+    const conference = new Ics.Conference.ConferenceClient({
+    rtcConfiguration: {
+      iceServers: [{
+        urls: ["stun:stun.l.google.com:19302"],
+   //     credential: "xxx",
+    //    username: "xxx"
+      }]
+    }
+    });
+
     function renderVideo(stream){
         conference.subscribe(stream)
         .then((subscriptions)=>{
