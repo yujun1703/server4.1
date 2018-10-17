@@ -9,6 +9,7 @@ const runSocketIOSample = function() {
     let myId;
     let subscriptionForMixedStream;
     let myRoom;
+    let mediaRtmp;
 
     function getParameterByName(name) {
         name = name.replace(/[\[]/, '\\\[').replace(/[\]]/, '\\\]');
@@ -80,6 +81,7 @@ const runSocketIOSample = function() {
         myRoom = getParameterByName('room');
         var isHttps = (location.protocol === 'https:');
         var mediaUrl = getParameterByName('url');
+        mediaRtmp= getParameterByName('rtmp');
         var isPublish = getParameterByName('publish');
         createToken(myRoom, 'user', 'presenter', function(response) {
             var token = response;
@@ -114,6 +116,15 @@ const runSocketIOSample = function() {
                 }
                 var streams = resp.remoteStreams;
                 for (const stream of streams) {
+
+                    if(stream.source.video === 'mixed')
+                    {
+                        if(mediaRtmp)
+                        {
+                            startStreamingOut(myRoom,mediaRtmp,stream.id,stream.id);
+                        }
+                    }
+
                     if(!subscribeForward){
                       if (stream.source.audio === 'mixed' || stream.source.video ===
                         'mixed') {

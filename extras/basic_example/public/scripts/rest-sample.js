@@ -225,6 +225,33 @@ var startStreamingIn = function (room, inUrl, host) {
     send('POST', '/rooms/' + room + '/streaming-ins', options, onResponse, host);
 };
 
+var startStreamingOut = function(room, url, audioFrom, videoFrom) {
+    var options = {
+        media: {
+            audio: {
+                from: audioFrom,
+                format:{
+                    codec:"aac",
+                    sampleRate:48000,
+                    channelNum:2
+                }
+                //format: 'aac'
+            },
+            video: {
+                from: videoFrom,
+                format:{
+                    codec:"h264"
+                }
+
+                //format: "h264"
+            }
+        },
+        url: url
+    };
+    send('POST', '/rooms/' + room + '/streaming-outs', options, onResponse);
+};
+
+
 var stopStreamingIn = function (room, stream, host) {
     send('DELETE', '/rooms/' + room + '/streaming-ins/' + stream, undefined,
         onResponse, host);
