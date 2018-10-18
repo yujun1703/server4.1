@@ -225,32 +225,6 @@ var startStreamingIn = function (room, inUrl, host) {
     send('POST', '/rooms/' + room + '/streaming-ins', options, onResponse, host);
 };
 
-var startStreamingOut = function(room, url, audioFrom, videoFrom) {
-    var options = {
-        media: {
-            audio: {
-                from: audioFrom,
-                format:{
-                    codec:"aac",
-                    sampleRate:48000,
-                    channelNum:2
-                }
-                //format: 'aac'
-            },
-            video: {
-                from: videoFrom,
-                format:{
-                    codec:"h264"
-                }
-
-                //format: "h264"
-            }
-        },
-        url: url
-    };
-    send('POST', '/rooms/' + room + '/streaming-outs', options, onResponse);
-};
-
 
 var stopStreamingIn = function (room, stream, host) {
     send('DELETE', '/rooms/' + room + '/streaming-ins/' + stream, undefined,
@@ -299,20 +273,47 @@ var listStreamingOuts = function (room, host) {
     send('GET', '/rooms/' + room + '/streaming-outs/', undefined, onResponse, host);
 };
 
-var startStreamingOut = function (room, outUrl, audioFrom, videoFrom, host) {
+var startStreamingOut = function(room, url, audioFrom, videoFrom,host) {
     var options = {
         media: {
             audio: {
-                from: audioFrom
+                from: audioFrom,
+                format:{
+                    codec:"aac",
+                    sampleRate:48000,
+                    channelNum:2
+                }
+                //format: 'aac'
             },
             video: {
-                from: videoFrom
+                from: videoFrom,
+                format:{
+                    codec:"h264"
+                }
+
+                //format: "h264"
             }
         },
-        url: outUrl
+        url: url
     };
-    send('POST', '/rooms/' + room + '/streaming-outs', options, onResponse, host);
+    send('POST', '/rooms/' + room + '/streaming-outs', options, onResponse,host);
 };
+
+
+// var startStreamingOut = function (room, outUrl, audioFrom, videoFrom, host) {
+//     var options = {
+//         media: {
+//             audio: {
+//                 from: audioFrom
+//             },
+//             video: {
+//                 from: videoFrom
+//             }
+//         },
+//         url: outUrl
+//     };
+//     send('POST', '/rooms/' + room + '/streaming-outs', options, onResponse, host);
+// };
 
 var stopStreamingOut = function (room, id, host) {
     send('DELETE', '/rooms/' + room + '/streaming-outs/' + id, undefined,
