@@ -8,8 +8,9 @@ var send = function (method, path, body, onRes, host) {
             onRes(req.responseText);
         }
     };
-    let url = generateUrl(host, path);
-    req.open(method, url, true);
+//    let url = generateUrl(host, path);
+    //req.open(method, url, true);
+    req.open(method, path, true);
     req.setRequestHeader('Content-Type', 'application/json');
     if (body !== undefined) {
         req.send(JSON.stringify(body));
