@@ -274,6 +274,7 @@ var listStreamingOuts = function (room, host) {
     send('GET', '/rooms/' + room + '/streaming-outs/', undefined, onResponse, host);
 };
 
+/*
 var startStreamingOut = function(room, url, audioFrom, videoFrom,host) {
     var options = {
         media: {
@@ -299,22 +300,23 @@ var startStreamingOut = function(room, url, audioFrom, videoFrom,host) {
     };
     send('POST', '/rooms/' + room + '/streaming-outs', options, onResponse,host);
 };
+*/
 
 
-// var startStreamingOut = function (room, outUrl, audioFrom, videoFrom, host) {
-//     var options = {
-//         media: {
-//             audio: {
-//                 from: audioFrom
-//             },
-//             video: {
-//                 from: videoFrom
-//             }
-//         },
-//         url: outUrl
-//     };
-//     send('POST', '/rooms/' + room + '/streaming-outs', options, onResponse, host);
-// };
+ var startStreamingOut = function (room, outUrl, audioFrom, videoFrom, host) {
+     var options = {
+         media: {
+             audio: {
+                 from: audioFrom
+             },
+             video: {
+                 from: videoFrom
+             }
+         },
+         url: outUrl
+     };
+     send('POST', '/rooms/' + room + '/streaming-outs', options, onResponse, host);
+ };
 
 var stopStreamingOut = function (room, id, host) {
     send('DELETE', '/rooms/' + room + '/streaming-outs/' + id, undefined,
