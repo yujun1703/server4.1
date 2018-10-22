@@ -32,7 +32,7 @@ app.use(function(req, res, next) {
   }
 });
 
-icsREST.API.init('5ba33a4b3b39d43b303e5971', 'z5BZHDpnnMW8qJ+5cgjfXEi9XGKVV+QRTXCkJ0Qkkf+ruW93/7LoJ9D7n+3xJJNSePJ0jQftohFfbVqiuy9Y4v9zgabKrsFDcL58bpL64AH5oBk7b9D8UdqtlLA7VkfM6rr5Ae2dcTNCL8YrtCNLQsyeavmMPutG4GTUIVJnyH4=', 'http://localhost:8300/', true);
+icsREST.API.init('5bca85c9d5902e225987f600', 'ofHA/IIYSTrifOr5ShtXmik5sLF/k2FRXpS5dGU30Z07e8U6s/EFD13XK9hBJXiMnvcMNKYGyzrgiOF1jd2kG8QwdMWjBLc8jT92DaJ9vUE/rR7LCy35yCiQvSC/Uv3e2PFcawBaKanR3QKSHfVWrzDigUn6Jn+sBGzv97wDXds=', 'http://localhost:8300/', true);
 
 var sampleRoom;
 var pageOption = { page: 1, per_page: 100 };
@@ -457,7 +457,7 @@ spdy.createServer({
   spdy: {
     plain: true
   }
-}, app).listen(3001, (err) => {
+}, app).listen(8401, (err) => {
   if (err) {
     console.log('Failed to setup plain server, ', err);
     return process.exit(1);

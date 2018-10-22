@@ -25,7 +25,7 @@ const runSocketIOSample = function() {
     const conference = new Ics.Conference.ConferenceClient({
     rtcConfiguration: {
       iceServers: [{
-        urls: ["stun:stun.l.google.com:19302"],
+        urls: ["stun:stun.l.google.com:19302","stun:47.75.214.105:65531"],
    //     credential: "xxx",
     //    username: "xxx"
       }]

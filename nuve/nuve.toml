@@ -1,6 +1,6 @@
 [nuve]
 keystorePath = "./cert/certificate.pfx"
-superserviceID = "5ba33a4b3b39d43b303e5970"
+superserviceID = "5bca85c9d5902e225987f5ff"
 ssl = false #default: false
 port = 8300 #default: 3000, port of nuve server
 numberOfProcess = 4 #default: 1
