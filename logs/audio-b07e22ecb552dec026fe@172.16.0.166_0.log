@@ -1,5 +1,0 @@
-2018-10-16 19:45:32.226  - INFO: ErizoJS - pid: 17575
-2018-10-16 19:45:32.229  - INFO: ErizoJS - Connecting to rabbitMQ server...
-2018-10-16 19:45:32.240  - INFO: AmqpClient - Connecting to rabbitMQ server OK, hostPort: { host: 'localhost', port: 5672 }
-2018-10-16 19:45:32.257  - INFO: ErizoJS - audio-b07e22ecb552dec026fe@172.16.0.166_0 as rpc server ready
-2018-10-16 19:45:32.260  - INFO: ErizoJS - audio-b07e22ecb552dec026fe@172.16.0.166_0 as monitor ready

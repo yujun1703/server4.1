@@ -1,5 +1,0 @@
-2018-10-16 19:45:35.280  - INFO: AmqpClient - Connecting to rabbitMQ server OK, hostPort: { host: 'localhost', port: 5672 }
-2018-10-16 19:45:35.295  - INFO: ErizoAgent - sip agent join cluster ok.
-2018-10-16 19:45:35.301  - INFO: ClusterWorker - Join cluster woogeen-cluster OK.
-2018-10-16 19:45:35.305  - INFO: ErizoAgent - as rpc server ok.
-2018-10-16 19:45:35.306  - INFO: ErizoAgent - as monitoring target ok.

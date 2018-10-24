@@ -1,7 +1,0 @@
-2018-10-16 19:45:40.624  - INFO: AmqpClient - Connecting to rabbitMQ server OK, hostPort: { host: 'localhost', port: 5672 }
-2018-10-16 19:45:40.635  - INFO: Main - portal initializing as rpc client ok
-2018-10-16 19:45:40.647  - INFO: Main - portal join cluster ok, with rpcID: portal-df6ef3b3897ae655b7b7@47.75.214.105
-2018-10-16 19:45:40.647  - INFO: ClusterWorker - Join cluster woogeen-cluster OK.
-2018-10-16 19:45:40.650  - INFO: Main - portal initializing as rpc server ok
-2018-10-16 19:45:40.652  - INFO: Main - portal-df6ef3b3897ae655b7b7@47.75.214.105 as monitor ready
-2018-10-16 19:45:41.069  - INFO: Main - start socket.io server ok.

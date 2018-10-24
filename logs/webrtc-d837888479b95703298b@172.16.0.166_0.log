@@ -1,6 +1,0 @@
-2018-10-16 19:29:35.186  - INFO: ErizoJS - pid: 9497
-2018-10-16 19:29:35.188  - INFO: ErizoJS - Connecting to rabbitMQ server...
-2018-10-16 19:29:35.200  - INFO: AmqpClient - Connecting to rabbitMQ server OK, hostPort: { host: 'localhost', port: 5672 }
-2018-10-16 19:29:35.246  - INFO: ErizoJS - webrtc-d837888479b95703298b@172.16.0.166_0 as rpc server ready
-2018-10-16 19:29:35.249  - INFO: ErizoJS - webrtc-d837888479b95703298b@172.16.0.166_0 as monitor ready
-2018-10-16 19:31:10.586  - WARN: ErizoJS - Exiting on SIGTERM
